@@ -18,4 +18,4 @@ To run run_analysis.R set your working directory to the directory containing it 
 
 The second of these, data/smartphoneTidy2.csv, is submitted for the project.
 
-Codebook.md contains a description of the variables in smartphoneTidy2.csv
+CodeBook.md contains a description of the variables in smartphoneTidy2.csv
