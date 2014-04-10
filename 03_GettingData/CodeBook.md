@@ -31,6 +31,14 @@ These signals were used to estimate variables of the feature vector for each pat
 
 Transformations
 ---------------
+
+Created train and test data sets as a combination of the three files provided for each:  
+X/features, y/activity (the dependent variable), and subject.
+
+The original train and test data sets were merged into a single data set as specified in the instructions.
+
+The subject variable was transformed from an integer to a factor because it is categorical and should NOT be treated as a number (e.g. in regression).
+
 The activity variable was transformed from an integer to a factor using the names in activity_labels.txt:  
 
 1 WALKING  
@@ -52,8 +60,9 @@ Case was retained and '_' used to retain the descriptiveness and readability of 
 Variables
 ---------
 
-subject - Integer from 1 to 30 indicating the subject (person)  
-activity - Factor with one of six values indicating the activity: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+subject - Factor from 1 to 30 indicating the subject (person)  
+activity - Factor with one of six values indicating the activity: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING  
+activity is the dependent variable (e.g. predicting this is the goal).
 
 The remaining variables are a subset of the original features (mean() and std() in features_info.txt below) averaged over each combination of subject and activity.  Each of them is numerical.  They are named as follows (see key below for further details).
 

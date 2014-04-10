@@ -62,6 +62,8 @@ y_factor$activity <- factor(y$V1, labels=activity_labels[,2])
 
 # Rename subject column to subject
 colnames(subject) <- "subject"
+# Transform subject to a factor because it should NOT be interpreted as a number
+subject$subject <- factor(subject$subject)
 
 # See feature names in features.txt
 # Note some of these characters will be illegal in R.  Think about how to clean.
